@@ -1,4 +1,6 @@
-import { King } from './king';
+import { Advisor } from './advisor.js';
+import { Fighter } from './fighter.js';
+import { King } from './king.js';
 
 export class Character {
     name: string;
@@ -7,7 +9,8 @@ export class Character {
     lifeStatus: boolean;
     message: string;
     static series = 'Game of Thrones';
-    partner: King | null;
+    //advising: Fighter | null;
+    //squiring: Fighter | null;
     image: string;
     constructor(name: string, family: string, age: number) {
         this.name = name;
@@ -15,7 +18,8 @@ export class Character {
         this.age = age;
         this.lifeStatus = true;
         this.message = '';
-        this.partner = null;
+        //this.advising = null;
+        //this.squiring = null;
         this.image = '';
     }
 
