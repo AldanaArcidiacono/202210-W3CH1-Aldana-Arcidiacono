@@ -5,7 +5,8 @@ export class Character {
         this.age = age;
         this.lifeStatus = true;
         this.message = '';
-        this.partner = null;
+        //this.advising = null;
+        //this.squiring = null;
         this.image = '';
     }
     communicate() {
