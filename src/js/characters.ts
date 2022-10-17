@@ -8,3 +8,5 @@ const characters = [
 
 characters[0].partner = characters[1];
 // Tyron es asesor de Daenerys (Tiene un campo de asesor (ej partner))
+
+console.log(characters);

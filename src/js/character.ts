@@ -8,6 +8,7 @@ export class Character {
     message: string;
     static series = 'Game of Thrones';
     partner: King | null;
+    image: string;
     constructor(name: string, family: string, age: number) {
         this.name = name;
         this.family = family;
@@ -15,6 +16,7 @@ export class Character {
         this.lifeStatus = true;
         this.message = '';
         this.partner = null;
+        this.image = '';
     }
 
     communicate() {
