@@ -11,4 +11,4 @@ export const characters = [
     new Squire('Bronn', 'Black Waters', 50, 5),
 ];
 
-//characters[4].squiring = characters[1];
+(<Advisor>characters[3]).hired(characters[2] as Fighter);

@@ -9,4 +9,4 @@ export const characters = [
     new Advisor('Tyrion Lannister', 'Targaryen', 43),
     new Squire('Bronn', 'Black Waters', 50, 5),
 ];
-//characters[4].squiring = characters[1];
+characters[3].hired(characters[2]);
