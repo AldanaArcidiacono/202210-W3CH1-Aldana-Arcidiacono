@@ -1,16 +1,23 @@
-import { Advisor } from './advisor.js';
-import { Fighter } from './fighter.js';
-import { King } from './king.js';
-
-export class Character {
+export interface ICharacter {
+    name: string;
+    family: string;
+    age: number;
+    image: string;
+    lifeStatus: boolean;
+    message: string;
+}
+export interface IMethodsCharacter {
+    death: () => void;
+    communicate: () => string;
+}
+//export abstract class Character implements ICharacter, IMethodsCharacter {
+export class Character implements ICharacter, IMethodsCharacter {
     name: string;
     family: string;
     age: number;
     lifeStatus: boolean;
     message: string;
     static series = 'Game of Thrones';
-    //advising: Fighter | null;
-    //squiring: Fighter | null;
     image: string;
     constructor(name: string, family: string, age: number) {
         this.name = name;
@@ -18,8 +25,6 @@ export class Character {
         this.age = age;
         this.lifeStatus = true;
         this.message = '';
-        //this.advising = null;
-        //this.squiring = null;
         this.image = '';
     }
 

@@ -1,3 +1,4 @@
+//export abstract class Character implements ICharacter, IMethodsCharacter {
 export class Character {
     constructor(name, family, age) {
         this.name = name;
@@ -5,8 +6,6 @@ export class Character {
         this.age = age;
         this.lifeStatus = true;
         this.message = '';
-        //this.advising = null;
-        //this.squiring = null;
         this.image = '';
     }
     communicate() {
